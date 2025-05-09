@@ -82,17 +82,28 @@ header h2{
 .feature {
     background: #363636;
 }
-.feature li{
-    width: 33.333333%;
+.feature ul{
+    background:url(../images/feature-bg.jpg) no-repeat center top;
+    display: flex;
+   
+}
+.feature ul li{
+    width: 100%;
     height:300px;
-    float:left;
+    display: flex;
     border-right:1px solid #fff;
     box-sizing:border-box;
-    text-align:center;
-    padding-top:98px;
+    justify-content: center;
+    align-items: center;
 }
 .feature li:first-child{
     border-left:1px solid #fff;
+}
+.feature li a{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
 }
 .feature li h3{
     font-family: 'Fira Sans', sans-serif;
@@ -100,11 +111,8 @@ header h2{
     text-transform: uppercase;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 24px;
 }
-.feature ul{
-    background:url(../images/feature-bg.jpg) no-repeat center top;
-}
+
 /* ----------- main content ---------- */
 
 /* ----------- portfolio ---------- */
