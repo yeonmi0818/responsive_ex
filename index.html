@@ -135,5 +135,23 @@
 			<p>&copy; copyright 2021, My Portfolio Designs</p>
 		</div>
 	</footer>
+	<script>
+		const menuIcon = document.querySelector('.menu-icon');
+		const mainMenu = document.querySelector('nav .main-menu');
+		
+		menuIcon.addEventListener('click',()=>{
+			mainMenu.classList.toggle('active');
+		})
+		/*
+		window.addEventListener('resize',()=>{
+			if(window.innerWidth > 600){
+				mainMenu.style.display = 'block';
+			}
+		});
+		*/
+		
+	</script>
 </body>
 </html>
+
+대상.classList.toggle("class1");
