@@ -119,39 +119,33 @@ header h2{
 .portfolio {
     background: #dadada;
 }
+.porfolio-list{
+    display: flex;
+    gap: 20px;
+}
 .porfolio-list li{
     width: 210px;
     height: 210px;
-    margin-right: 20px;
-    float:left;
+    display: flex;
     background-repeat:no-repeat;
     background-position:center;
     position: relative;
-}
-.porfolio-list li:last-child{
-    margin-right: 0;
 }
 .porfolio-list li .caption{
     position: absolute;
     left: 0;right: 0;bottom: 0;
     background:rgba(0,0,0,.5);
     padding: 9px;
-}
-.porfolio-list li .caption:after{
-    content:'';
-    display: block;
-    clear:both;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .porfolio-list li .caption h3{
-    float:left;
     font-size: 14px;
     line-height: 1;
     font-weight: bold;
     color: #ffffff;
     width: 90px;
-}
-.porfolio-list li .caption img{
-    float:right;
 }
 /* ----------- footer ---------- */
 footer {
